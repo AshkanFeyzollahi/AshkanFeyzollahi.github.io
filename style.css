@@ -55,7 +55,7 @@ a {
 }
 
 #header {
-  height: 100dvh;
+  height: 100vh;
   z-index: 1;
   animation: header-animation linear;
   animation-timeline: scroll();
