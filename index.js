@@ -1,5 +1,7 @@
 let ProjectsButton = document.getElementById("projects_button");
 let DetailsButton = document.getElementById("details_button");
+let Projects = document.getElementById("projects");
+let Details = document.getElementById("details");
 
 function RotateElement(event, element) {
     let x = event.offsetX;
@@ -33,3 +35,11 @@ DetailsButton.addEventListener("mousemove", (e) => {
 DetailsButton.addEventListener("mouseleave", (e) => {
     ResetRotate(DetailsButton);
 });
+
+function scrollIntoProjects() {
+    Projects.scrollIntoView({ "behavior": "smooth" });
+}
+
+function scrollIntoDetails() {
+    Details.scrollIntoView({ "behavior": "smooth" });
+}
