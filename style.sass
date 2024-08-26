@@ -224,18 +224,25 @@ h6
     #header > #nav-items
         margin-top: -5px
         margin-right: -5px
-        width: 30px
-        height: 30px
+        width: 40px
+        height: 40px
         overflow: hidden
-        background: url(assets/menu.svg)
         color: white
         transition: all 0.1s ease
         cursor: pointer
 
-        *
-            position: absolute
-            translate: 999px 999px
-        
+        #projects_l
+            display: none
+
+        #discord
+            font-size: 0px
+            display: block
+            background: url(assets/discord.svg)
+            background-size: cover
+            width: 40px
+            height: 40px
+            transform: translateX(-15px)
+
         &:hover
             scale: 110%
 

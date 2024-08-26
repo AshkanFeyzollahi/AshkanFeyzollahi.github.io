@@ -251,17 +251,24 @@ h6 {
   #header > #nav-items {
     margin-top: -5px;
     margin-right: -5px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     overflow: hidden;
-    background: url(assets/menu.svg);
     color: white;
     transition: all 0.1s ease;
     cursor: pointer;
   }
-  #header > #nav-items * {
-    position: absolute;
-    translate: 999px 999px;
+  #header > #nav-items #projects_l {
+    display: none;
+  }
+  #header > #nav-items #discord {
+    font-size: 0px;
+    display: block;
+    background: url(assets/discord.svg);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    transform: translateX(-15px);
   }
   #header > #nav-items:hover {
     scale: 110%;
