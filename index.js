@@ -1,5 +1,6 @@
 let ProjectsButton = document.getElementById("projects_button");
 let DetailsButton = document.getElementById("details_button");
+let MoreProjectsButton = document.getElementById("more_projects");
 let Projects = document.getElementById("projects");
 let Details = document.getElementById("details");
 
@@ -42,4 +43,8 @@ function scrollIntoProjects() {
 
 function scrollIntoDetails() {
     Details.scrollIntoView({ "behavior": "smooth" });
+}
+
+function goto_(url) {
+    open(url, "_blank");
 }
