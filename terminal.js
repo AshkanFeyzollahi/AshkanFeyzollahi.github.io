@@ -57,7 +57,7 @@ const commands = {
     // contactme - Displays a message about how to contact me.
     contactme() {
         this.echo(
-            "<br><strong>Woah, so you wanna contact me? then! here's my gmail -> <a href=\"ashkanfeyzollahi@gmail.com\">ashkanfeyzollahi@gmail.com</a></strong><br><br>", { raw: true }
+            "<br><strong>Woah, so you wanna contact me? then! here's my gmail -> <a href=\"mailto:ashkanfeyzollahi@gmail.com\">ashkanfeyzollahi@gmail.com</a></strong><br><br>", { raw: true }
         );
     },
 
