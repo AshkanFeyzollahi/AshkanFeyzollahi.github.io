@@ -59,7 +59,7 @@ const commands = {
         this.echo(
             "<br>Woah, so you wanna contact me? then! here's my gmail -> <a href=\"ashkanfeyzollahi@gmail.com\"></a><br>", { raw: true }
         );
-    }
+    },
 
     // github - Opens the Github profile URL of mine in a blank window.
     github() {
