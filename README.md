@@ -1,3 +1,4 @@
 # AshkanFeyzollahi.github.io
 
-This repository used to deploy my portfolio website
+This repository used to deploy my website.
+
