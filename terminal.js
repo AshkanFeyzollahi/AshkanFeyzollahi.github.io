@@ -1,4 +1,12 @@
+/*
+ * terminal.js
+ * ~~~
+ * Custom JavaScript Code For Customizing JQuery Terminal
+ */
+
+// Array Of Commands
 const commands = {
+    // help - Displays a guiding message.
     help() {
         this.echo(
             "\nAvailable commands:\n" +
@@ -11,6 +19,8 @@ const commands = {
             "\n"
         );
     },
+
+    // whoam - Displays a message about who i am.
     whoam() {
         this.echo(
             "<br>👋 <strong>About me</strong><br>" +
@@ -42,9 +52,13 @@ const commands = {
             { raw: true }
         );
     },
+
+    // github - Opens the Github profile URL of mine in a blank window.
     github() {
         open("https://github.com/AshkanFeyzollahi", "blank_");
     },
+
+    // repos - Displays all my Github repositories.
     repos: async function() {
         this.echo("\n");
 
@@ -61,6 +75,7 @@ const commands = {
     }
 };
 
+// The message that sent when HTML body is loaded.
 greetings = `Hey there!, I'm-
                         
  █████╗ ███████╗██╗  ██╗██╗  ██╗ █████╗ ███╗   ██╗    ███████╗███████╗██╗   ██╗███████╗ ██████╗ ██╗     ██╗      █████╗ ██╗  ██╗██╗
@@ -71,11 +86,15 @@ greetings = `Hey there!, I'm-
 ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝     ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝
 `
 
+// Check if HTML body is ready
 $(document).ready(function() {
+    // Make HTML body a JQuery terminal
     $(document.body).terminal(commands, {
         greetings: greetings,
         prompt: "[ashkanfeyzollahi.github.io@guest] $ "
     });
 
+    // Execute the command 'help' when HTML is ready.
     $(document.body).terminal().exec('help');
 });
+

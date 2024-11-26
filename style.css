@@ -1,4 +1,8 @@
+/* style.css - Custom CSS Styles */
+
+/* HTML Tags */
 body {
+  /* JQuery Terminal Properties */
   --size: 1.25;
 
   --color: #ded3c3;
@@ -19,12 +23,15 @@ p {
   margin: 0;
 }
 
+/* Classes */
 .description {
   color: #7d786f;
 }
 
+/* ETC. */
 @media (prefers-reduced-motion) {
   :root {
       --animation: terminal-none;
   }
 }
+
