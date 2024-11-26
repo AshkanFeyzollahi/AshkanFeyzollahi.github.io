@@ -11,11 +11,12 @@ const commands = {
         this.echo(
             "\nAvailable commands:\n" +
             "\n" +
-            " * help           Displays this message and exit.\n" +
-            " * whoam          Displays information about me.\n" +
-            " * github         Opens my Github profile.\n" +
-            " * repos          Shows my Github repositories.\n" +
-            " * clear          Clears terminal screen." +
+            " * help           Display this message and exit.\n" +
+            " * whoam          Display information about me.\n" +
+            " * contactme      Display a message about how to contact me.\n" +
+            " * github         Open my Github profile.\n" +
+            " * repos          Show my Github repositories.\n" +
+            " * clear          Clear terminal screen." +
             "\n"
         );
     },
@@ -52,6 +53,13 @@ const commands = {
             { raw: true }
         );
     },
+
+    // contactme - Displays a message about how to contact me.
+    contactme() {
+        this.echo(
+            "<br>Woah, so you wanna contact me? then! here's my gmail -> <a href=\"ashkanfeyzollahi@gmail.com\"></a><br>", { raw: true }
+        );
+    }
 
     // github - Opens the Github profile URL of mine in a blank window.
     github() {
