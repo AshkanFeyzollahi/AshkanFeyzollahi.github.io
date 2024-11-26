@@ -1,3 +1,3 @@
-# AshkanFeyzollahi.github.io (Work in progress)
+# AshkanFeyzollahi.github.io
 
 This repository used to deploy my portfolio website
