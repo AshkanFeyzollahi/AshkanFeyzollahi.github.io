@@ -1,22 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- JQuery Terminal CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
-        
-        <!-- HTML Favicon -->
-        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Terminalicon2.png/800px-Terminalicon2.png">
-    </head>
-    <body>
-        <!-- JQuery Terminal JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal WebPage</title>
 
-        <!-- Custom JavaScript Code -->
-        <script src="terminal.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">My Personal WebPage</h1>
 
-        <!-- Custom CSS Styles -->
-        <link rel="stylesheet" href="./style.css">
-    </body>
+        <img src="https://avatars.githubusercontent.com/u/136630721?v=4" alt="Profile picture" id="profile-picture">
+
+        <div style="text-align: center; margin-top: 30px">
+            <a style="margin: 10px" href="#about_me">About me</a>
+            &HorizontalLine;
+            <a style="margin: 10px" href="#pinned-repositories">Repositories</a>
+            &HorizontalLine;
+            <a style="margin: 10px" href="#blogs">Blogs</a>
+            &HorizontalLine;
+            <a style="margin: 10px" href="#contact_me">Contact me</a>
+        </div>
+
+        <h2 id="about_me">
+            About me
+        </h2>
+
+        <p>I'm a 16-year-old programmer with proficiency in Python and JavaScript. In addition to coding, I enjoy playing chess and exploring the exciting world of machine learning and computer science from the comfort of my own home.</p>
+
+        <h3>My journey</h3>
+
+        <p>My journey in programming began four years ago, and since then, I have expanded my skillset to encompass seven different programming languages. With each language, I strive to not only master its syntax but also understand its underlying philosophy and principles.</p>
+
+        <p>Programming has become more than just a hobby for me; it's a passion that drives me to constantly learn and grow. Whether I'm working on personal projects or contributing to open source initiatives, I take pride in writing clean, efficient, and elegant code.</p>
+
+        <h3>Thank you!</h3>
+
+        <p>Thank you for taking the time to learn a bit about me. If you have any questions or would like to connect, feel free to reach out!</p>
+
+        <h2 id="pinned-repositories">
+            Repositories (Pinned)
+        </h2>
+
+        <div id="repositories">
+            
+        </div>
+
+        <h2 id="blogs">
+            Blogs
+        </h2>
+
+        <p style="color: #343434; text-align: center; margin-top: 50px; margin-bottom: 80px;">No blogs are available currently!</p>
+
+        <h2 id="contact_me">
+            Contact me
+        </h2>
+
+        <p>Email address: <a href="mailto:ashkanfeyzollahi@gmail.com">ashkanfeyzollahi@gmail.com</a></p>
+
+        <br>
+
+        <div class="footer" style="margin-top: 30px;">
+            <p>&copy; 2024, AshkanFeyzollahi</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
-

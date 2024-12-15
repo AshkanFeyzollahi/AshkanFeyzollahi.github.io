@@ -1,37 +1,64 @@
-/* style.css - Custom CSS Styles */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* HTML Tags */
-body {
-  /* JQuery Terminal Properties */
-  --size: 1.25;
+h1 {
+    font-size: 30pt;
+}
 
-  --color: #ded3c3;
-  --background: #2B2926;
+h2 {
+    margin-top: 40px;
+}
 
-  cursor: text;
-
-  overflow: hidden;
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'Merriweather';
 }
 
 a {
-  color: #547298;
-  text-decoration: none;
-  font-style: italic;
+    text-decoration: none;
+    color: rgb(28, 80, 211);
+    font-family: 'Open Sans';
 }
 
 p {
-  margin: 0;
+    color: #242424;
+    font-family: 'Open Sans';
 }
 
-/* Classes */
-.description {
-  color: #7d786f;
+.container {
+    width: 500px;
+    padding: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* ETC. */
-@media (prefers-reduced-motion) {
-  :root {
-      --animation: terminal-none;
-  }
+.footer p {
+    color: #888;
 }
 
+.repository {
+    border-radius: 5px;
+    border: 1px #DDD solid;
+    padding: 20px;
+}
+
+.repository p {
+    margin: 0;
+}
+
+.repository p .star {
+    color: #ffbf00;
+}
+
+#profile-picture {
+    width: 100%;
+    height: auto;
+
+    border-radius: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: calc(100% - 20px);
+    }
+}
