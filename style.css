@@ -40,6 +40,7 @@ p {
     border-radius: 5px;
     border: 1px #DDD solid;
     padding: 20px;
+    margin: 5px;
 }
 
 .repository p {
